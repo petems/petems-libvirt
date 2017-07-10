@@ -4,17 +4,14 @@ All notable changes to this project will be documented in this file.
 Each new release typically also includes the latest modulesync defaults.
 These should not impact the functionality of the module.
 
-## [v1.0.0](https://github.com/thias/puppet-libvirt/tree/v1.0.0) (2017-07-10)
-[Full Changelog](https://github.com/thias/puppet-libvirt/compare/1.0.0...v1.0.0)
-
-**Closed issues:**
-
-- Add support for Linux Mint [\#55](https://github.com/thias/puppet-libvirt/issues/55)
-- rspec-system tests fail to run corectly [\#48](https://github.com/thias/puppet-libvirt/issues/48)
+## [v2.0.0](https://github.com/thias/puppet-libvirt/tree/v2.0.0) (2017-07-10)
+[Full Changelog](https://github.com/thias/puppet-libvirt/compare/1.0.0...v2.0.0)
 
 **Merged pull requests:**
 
-- Added LinuxMint alongside Ubuntu to ensure that module uses the corre… [\#56](https://github.com/thias/puppet-libvirt/pull/56) ([ssaki](https://github.com/ssaki))
+* https://github.com/thias/puppet-libvirt/pull/64
+* https://github.com/thias/puppet-libvirt/pull/52
+* https://github.com/thias/puppet-libvirt/pull/63
 
 ## [1.0.0](https://github.com/thias/puppet-libvirt/tree/1.0.0) (2015-04-28)
 [Full Changelog](https://github.com/thias/puppet-libvirt/compare/0.3.2...1.0.0)
