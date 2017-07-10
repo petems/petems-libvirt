@@ -8,3 +8,6 @@ RSpec.configure do |c|
     Puppet.features.stubs(:root? => true)
   end
 end
+
+# Include code coverage report for all our specs
+at_exit { RSpec::Puppet::Coverage.report! }

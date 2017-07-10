@@ -17,14 +17,14 @@ require 'spec_helper'
 describe 'libvirt', :type => :class do
   context 'supported operating systems' do
     on_supported_os.each do |os, facts|
-      context "on #{os} #{facts}" do
+      context "on #{os}" do
         let(:facts) do
-          facts
+          facts.merge({
+            :service_provider => 'systemd',
+          })
         end
 
         context 'with default parameters' do
-          let(:title) { 'libvirt' }
-
           it { should contain_class('libvirt') }
           it { should contain_file('/etc/libvirt/qemu/networks/autostart/default.xml')
                .with_ensure('absent')

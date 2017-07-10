@@ -82,7 +82,7 @@ define libvirt::network (
   validate_re ($ensure, '^(present|defined|enabled|running|undefined|absent)$',
     'Ensure must be one of defined (present), enabled (running), or undefined (absent).')
 
-  include ::libvirt::params
+  include ::libvirt
 
   Exec {
     cwd         => '/',

@@ -129,11 +129,16 @@ class libvirt (
       mode    => '0644',
       content => template('libvirt/sasl2/qemu-kvm.conf.erb'),
       notify  => Service['libvirtd'],
-      require => [Package['libvirt'], Package['qemu-kvm']]
+      require => [
+        Package['libvirt'],
+        Package['qemu-kvm']
+      ],
     }
   }
   if $radvd {
-    package { $radvd_package: ensure => installed }
+    package { $radvd_package:
+      ensure => installed
+    }
   }
 
   # Optional changes to the sysconfig file (on RedHat), or the defaults file
