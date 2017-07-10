@@ -1,4 +1,6 @@
-# puppet-libvirt
+# petems-libvirt
+
+> Note: This is my fork of thias-libvirt, awaiting it's transfer to Vox Pupuli
 
 ## Overview
 
